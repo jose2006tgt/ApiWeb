@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    color: white; 
+}
+
+#main {
+    width: 90%;
+    margin: auto;
+    background-color: yellow;
+    padding: 20px; 
+} 
+
+.principal {
+    background-color: green;
+    color: black; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+}

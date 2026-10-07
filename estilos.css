@@ -1,0 +1,74 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Un fondo gris muy claro */
+}
+
+header {
+    background-color: white;
+    color: #003366; /* Azul marino PUCESI */
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #003366; /* Línea separadora como en tu imagen */
+}
+
+footer {
+    background-color: #003366; /* Azul marino PUCESI */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.menu {
+    background-color: #003366; 
+    padding: 25px; /* Un poco más de espacio arriba y abajo */
+    text-align: center; /* Mantiene tus enlaces perfectamente en el centro */
+    position: relative; /* Prepara la barra azul para poder mover cosas libremente adentro */
+}
+
+.caja-servicio {
+    background-color: white;
+    color: #003366;
+    border: 2px solid #003366;
+    padding: 20px 40px;
+    margin: 10px; /* Separa las cajas entre sí */
+    display: inline-block; /* ¡LA CLAVE! Pone las cajitas en línea una al lado de la otra */
+    font-weight: bold;
+}
+
+.menu img {
+    position: absolute; /* Despega el logo del texto */
+    left: 30px; /* Lo envía a la esquina izquierda */
+    top: 5px; /* Lo baja un poquito desde el techo para que se vea centrado */
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+
+.menu a:hover {
+    color: #66b2ff; /* Cambia a un color celeste */
+    text-decoration: underline; /* Aparece una raya debajo */
+}
+
+
+#programas {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#contacto {
+    background-color: white;
+    color: #003366;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid #003366; 
+    border-bottom: 2px solid #003366; 
+}

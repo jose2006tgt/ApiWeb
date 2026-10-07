@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Estructura de Componentes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilospractica.css">
+</head>
+<body>
+
+    <!-- FILA 1: Header -->
+    <header class="encabezado">
+        <h1>Arquitectura y Componentes de una PC</h1>
+        <p>Guía fundamental para el ensamblaje y comprensión de hardware</p>
+    </header>
+
+    <!-- FILA 2: Dividida a la mitad con información detallada -->
+    <section class="fila-mitad">
+        <div class="caja-mitad division-derecha">
+            <h2>Procesador (CPU)</h2>
+            <p>
+                Es la unidad central de procesamiento, responsable de interpretar las instrucciones de los programas y procesar los datos. 
+                El rendimiento de una CPU se mide por su cantidad de núcleos (cores), hilos (threads) y su frecuencia de reloj en GHz. 
+                Es el componente más crítico para la compilación de código y la virtualización de sistemas operativos.
+            </p>
+        </div>
+        <div class="caja-mitad">
+            <h2>Tarjeta Gráfica (GPU)</h2>
+            <p>
+                Unidad dedicada al procesamiento de gráficos y operaciones de coma flotante. 
+                Cuenta con su propia memoria (VRAM) y un sistema de refrigeración independiente. 
+                Aunque es vital para videojuegos y modelado 3D, también es fundamental para acelerar procesos de Inteligencia Artificial y renderizado.
+            </p>
+        </div>
+    </section>
+
+    <!-- FILAS 3 y 4: Los 4 cuadros sin divisiones visibles -->
+    <section class="fila-cuadros">
+        <div class="caja-cuadro">
+            <h3>Memoria RAM</h3>
+            <p>Memoria volátil de acceso aleatorio. Almacena los datos y programas que el procesador está utilizando en tiempo real. Mayor capacidad (ej. 16GB o 32GB) permite ejecutar múltiples aplicaciones y contenedores simultáneamente sin ralentizar el sistema operativo.</p>
+        </div>
+        
+        <div class="caja-cuadro">
+            <h3>Almacenamiento (SSD/HDD)</h3>
+            <p>Memoria no volátil donde se guardan los archivos de forma permanente. Los discos de estado sólido (SSD), especialmente en formato NVMe M.2, ofrecen velocidades de lectura y escritura drásticamente superiores a los discos duros mecánicos (HDD) tradicionales.</p>
+        </div>
+        
+        <div class="caja-cuadro">
+            <h3>Placa Madre (Motherboard)</h3>
+            <p>La placa de circuito impreso principal que conecta todos los componentes de la computadora. Determina la compatibilidad del hardware mediante su zócalo (socket) para el procesador, tipo de RAM soportada (ej. DDR4 o DDR5) y los puertos de expansión PCIe.</p>
+        </div>
+        
+        <div class="caja-cuadro">
+            <h3>Fuente de Poder (PSU)</h3>
+            <p>Se encarga de transformar la corriente alterna (CA) del tomacorriente en corriente continua (CC) que utilizan los componentes. Es crucial elegir una fuente con el vataje (Watts) adecuado y certificación de eficiencia energética (80 Plus) para proteger el equipo.</p>
+        </div>
+    </section>
+
+    <!-- FILA 5: Footer -->
+    <footer class="pie-pagina">
+        <p>Footer</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Reset básico para que los porcentajes no fallen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* FILAS 1 y 5 */
+.encabezado, .pie-pagina {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.encabezado p {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* =========================================
+   Contenedores Flexbox
+========================================= */
+.fila-mitad, .fila-cuadros {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cajas bajen a la siguiente fila */
+    width: 100%;
+}
+
+/* FILA 2 (Las dos cajas oscuras) */
+.caja-mitad {
+    width: 50%;
+    background-color: #444; /* Gris oscuro */
+    color: white;
+    padding: 50px 30px; 
+    text-align: justify; /* Justifica el texto para que parezca un artículo de información */
+}
+
+/* Esta clase crea la única línea divisoria visible en la Fila 2 */
+.division-derecha {
+    border-right: 2px solid #ccc;
+}
+
+.caja-mitad h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FILAS 3 y 4 (Los cuatro cuadros claros de tu imagen) */
+.caja-cuadro {
+    width: 50%;
+    background-color: #dcdcdc; /* Gris claro que enviaste en la imagen */
+    color: #333;
+    padding: 40px 30px;
+    text-align: center;
+    /* NOTA: No hay propiedad 'border' aquí, por lo que no se verán divisiones */
+}
+
+.caja-cuadro h3 {
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   Media Queries (Tablets y Teléfonos)
+========================================= */
+
+/* Para pantallas medianas (Tablets) */
+@media (max-width: 800px) {
+    /* Mantenemos el 50% pero reducimos los márgenes internos */
+    .caja-mitad, .caja-cuadro {
+        padding: 30px 20px;
+    }
+}
+
+/* Para pantallas pequeñas (Teléfonos) */
+@media (max-width: 600px) {
+    /* Todo pasa a ocupar el 100% de la pantalla hacia abajo */
+    .caja-mitad, .caja-cuadro {
+        width: 100%;
+    }
+    
+    /* Quitamos la línea divisoria porque ahora estarán una encima de otra */
+    .division-derecha {
+        border-right: none;
+        border-bottom: 2px solid #ccc; /* La línea pasa a estar abajo */
+    }
+}
